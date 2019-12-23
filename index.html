@@ -1,0 +1,162 @@
+<html
+	<head>
+		<title>Domenico Cusumano</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400|Quattrocento|Quattrocento+Sans|Assistant&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				    
+				//for initial load
+			    var top = $(window).scrollTop();
+				if(top > 400){
+		        	$("#nav").addClass("sticky");
+				}
+				else{
+		        	$("#nav").removeClass("sticky");
+				}
+
+				//adding the sticky nav
+			    $( window ).scroll(function() {
+					var top = $(window).scrollTop();
+					if(top > ($("#header_container").height() - 65)){
+			        	$("#nav").addClass("sticky");
+					}
+					else{
+			        	$("#nav").removeClass("sticky");
+					}
+				});
+
+			    //toggling hamburger menu
+				$("#hamburger").click(function() {
+					$("#nav_menu").slideToggle();
+				});
+
+				//needed for toggling menu when making a selection
+				$("#nav_menu ul li a").click(function() {
+					$("#nav_menu").slideToggle();
+				});
+
+			});
+		
+		</script>
+	</head>
+	<body>
+		<div id="nav">
+			<div id="name" class="middle"> Domenico Cusumano<div id="hamburger">&#9776;</div>
+			</div>
+			
+		</div>
+		
+		<div id="nav_menu">
+			<ul>
+				<li><a href="#management">Management Style</a></li>
+				<li><a href="#framework">Development Framework Philosophy</a></li>
+				<li><a href="#juggling">Project Juggling</a></li>
+				<li><a href="#technical">Technical Proficiency</a></li>
+				<li><a href="#experience">Experience and References</a></li>
+				<li><a href="#interests">Interests</a></li>
+			</ul>
+		</div>
+		<div id="header_container">
+			<div id="header_name">Domenico Cusumano</div>
+		</div>
+		
+		<div id="content" class="middle">
+			<div id="subheader">A bit about me and what I've learned throughout my career. Working in technology for ten years, I am ever growing and curious about the art of product development. <div id="management" ></div></div>
+			<div id="left_side">
+				<div>
+					<div class='section_title'>Management Style</div>
+				</div>
+				<div class="section_text">
+					<p>I always felt that managing people is about discerning different personalities. I find it fascinating how everyone has their own idiosyncrasies that make them unique. There are many times while working on cross functional teams where frustrations can arise. I'll try my best to increase my awareness of the people around me and to get the best understanding of where they are coming from. </p>
+
+					<p>There are always subtle layers of communication where someone might be trying to tell you something or not tell you something. Getting a perception of these instances with a good level of emotional intelligence can help guide teams to work better with each other. I always took the approach of being candid and honest with my coworkers and do it in a way that is respectful while also empathetic to their viewpoints. I found this to create a layer of trust and mutual respect that made it easy to mediate solutions to difficulties that would arise. </p>
+
+					<p>I also enjoy people and have a general interest in learning about them and creating a friendly relationship. I try to meet with colleagues on a consistent basis  and always offer availability to those looking for help. I think this makes people comfortable approaching me with issues that arise.</p>
+
+					<p >This is always something I continually work on. I've actually found a great amount of inspiration within the last couple of years by observing futbol coaches. I've been fascinated with the different ways that each of these people inspire motivation. There are also many strategic and tactical approaches I've found that come into play within the industry. </p>
+
+					<img class="images" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raisport.rai.it%2Fdl%2Fimg%2F2018%2F04%2F12%2F1523532636701_15202436034858470445.jpg&f=1&nofb=1"/>
+					<div id="framework" class="separator">&nbsp;</div>
+				</div>
+				<div>
+					<div class='section_title'>Development Framework Philosophy</div>
+				</div>
+				<div class="section_text">
+					<p>I have worked with many different development methodologies throughout my career. This includes Waterfall, Agile, and a little bit of both. I caught the Agile bug some time ago, but am continually looking to experiment with different frameworks to build products.</p>
+
+					<p>I mostly lean toward working in shorter iterations. Developing small features to be released and tested in the market. However, it all depends on what you are trying to build.</p>
+
+					<p>I've worked on projects where teams thought they were using Agile but were using Waterfall masked as Scrum. It's really about adhering to the philosophy of small iterative output. There are a couple of requirements I've always felt are needed for a team to be truly Agile:</p>
+
+					<ul>
+						<li>A group of people willing to take the risk of releasing small features</li>
+						<li>Test Driven Development and unbinding of the QA process</li>
+						<li>Good Estimation</li>
+						<li>Ability to break things down</li>
+					</ul>
+
+					<p>At this point I can look at a product initiative or long term goal and build a strategy for a team to build something successfully. For big initiatives you might want to separate things out into small iterations and use Sprints for getting this idea to market. Other times, while working on many smaller product updates, you might want to use a Kanban board for delivering value at a fast pace over time.</p>
+
+					<p>I try to always stray away from idealism. If something is not working I will change it or stop using it. That goes for any Agile practice I am using now. What you use all depends on the circumstance, team, company culture, and product you are building. Take Bruce Lee's advice and be like water.</p>
+
+					<img class="images" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F394%2F357%2F394357757_640.jpg&f=1&nofb=1" />
+					<div id="juggling" class="separator" >&nbsp;</div>
+
+				</div>
+				<div>
+					<div class='section_title'>Project Juggling</div>
+				</div>
+				<div class="section_text">
+					<p class="final_p">Over the years I have developed a simple process I use to handle multiple projects concurrently. I have a queue of items that I keep separate from Jira that I need to get to. I resort to adding to this list whenever new things are asked of me. A request comes in, a team member needs help with something, being asked to drive initiatives for a certain project, etc. I make it a priority to add this to the queue and most importantly prioritize this list of items throughout the day. I simply attack each item one at a time until ... well never, this queue never ends.</p>
+					<div id="technical" class="separator" >&nbsp;</div>
+				</div>
+				<div>
+					<div class='section_title'>Technical Proficiency</div>
+				</div>
+				<div class="section_text">
+					<p>Having a BA in Computer Science in conjunction with the years I spent engineering has greatly helped the teams I've worked with. There are several stages of product development where this comes in handy. Early discussions, review of UX designs, and creation of early product ideas become much easier when having a good grasp of the technology and the company's internal architecture. Below are some specific areas where I've found this to be beneficial:</p>
+					<ul class="final_p">
+						<li>I'm able to better guide strategy with stakeholders when discussing business goals we are trying to achieve, This allows them to get quicker feedback and easily move forward.</li>
+						<li>Easily iterate with UX designers on product ideas and come up with possible better alternatives to solutions we are trying to solve.</li>
+						<li>Write technical specifications that translate clearly to engineering teams.</li>
+						<li>During the engineering phase when building new products. This can occur when developers encounter brick walls or scope creep ensues. Im able to enter conversation related to these situations and can help navigate discussion with engineering teams on solutions and alternative strategies for product initiatives.</li>
+						<li>There are many times during the testing process where a QA person might need a better grasp of the technical specifications for a new feature or initiative. Confusion can arise while testing new features and I am able to give clarity on what the expected behavior should be.</li>
+						<li style="padding-bottom:0px;">Communications with stakeholders when product changes have been made during the development process. This comes in handy when dealing with lay people who might not have too much technical knowledge and would need a better understanding of the decisions we've made.</li>
+					</ul>
+					<div id="experience" class="separator" >&nbsp;</div>
+				</div>
+				<div>
+					<div  class='section_title'>Experience and References</div>
+				</div>
+				<div class="section_text">
+					<p>Please view my resume <a style="color: #0ed7c4" href="https://drive.google.com/file/d/1VwaNGlWvW2MWASbjgi-xFq0g7CcVOat9/view">here</a></p>
+					<p class="final_p">For a list of references please contact me via domenicocusumano86@gmail.com.</p>
+					<div id="interests" class="separator" >&nbsp;</div>
+				</div>
+				<div>
+					<div class='section_title'>Interests</div>
+				</div>
+				<div class="section_text">
+					<p>I'm a musician and I spend my free time making house music. I've been playing guitar on and off for about 10 years and would like to learn the violin. I gig at clubs in Brooklyn and I'm looking to eventually start my own record label. You can find my soundcloud below.</p>
+					
+					<p>I love and appreciate art greatly and try to spend time reading, watching films, and being in museums whenever I can. I enjoy traveling as much as possible and generally like being in Europe.</p>
+
+					<p>I am into self development and am always looking to learn and better myself on a consistent basis.</p>
+				</div>
+				<div><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/280575053&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+			</div>
+			<div id="right_side" >
+				
+			</div>
+		</div>	
+		
+	</body>
+	
+	
+
+</html>
